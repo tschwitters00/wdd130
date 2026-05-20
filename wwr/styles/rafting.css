@@ -1,8 +1,8 @@
 :root {
     --primary-color: #1437C7;
-    --secondary-color: #8D8D91;
+    --secondary-color: #676959;
     --accent1-color: #31733A;
-    --accent2-color: #C5C79B;
+    --accent2-color: #612A2A;
     --heading-font: "Times New Roman", "Georgia", serif;
     --body-font: Arial, Helvetica, sans-serif;
 }
@@ -15,7 +15,7 @@
 
 body {
     font-family: var(--body-font);
-    color: var(--accent1-color)
+    color: var(--accent2-color)
 }
 
 header,
@@ -56,8 +56,8 @@ article {
     right: 25px;
     width: 90%;
     padding: 16px;
-    text-align: center;
-    background-color: var(--accent2-color);
+    text-align: left;
+    background-color: var(--secondary-color);
     color: #fff;
 }
 
