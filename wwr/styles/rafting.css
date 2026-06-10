@@ -65,17 +65,17 @@ h2 {
 }
 
 .multi-image h2,
-.multi-image-contact h2 {
+.multi-image-3 h2 {
     grid-column: span 5;
     margin: 5px;
 }
 
 .multi-image img,
-.multi-image-contact img {
+.multi-image-3 img {
     width: 140px;
 }
 
-.multi-image-contact {
+.multi-image-3 {
     display: grid;
     place-items: center;
     grid-template-columns: repeat(3, 1fr);
@@ -141,6 +141,32 @@ article {
     display: block;
     width: 100%;
     height: auto;
+}
+
+.hero-button p{
+    position:  absolute;
+    display: block;
+    top: 72%;
+    right: 32%;
+    width: 30%;
+    text-shadow:   
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+    font-size: 18px;
+    color: #fff;
+}
+
+.hero-button button{
+    position: absolute;
+    display: block;
+    top: 80%;
+    right: 40%;
+    width: 20%;
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+    font-size: 2rem    
 }
 
 form {
@@ -219,7 +245,50 @@ footer {
     grid-template-columns: .5fr 2fr;
 }
 
-.single-input input {
+.single-input input, .single-input-index input{
     width: 300px;
     height: 20px;
+}
+
+.single-input-index {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: right;
+    place-items: center;
+}
+
+.center{
+    text-align: center;
+}
+
+.trips-button{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    font-size: 25px;
+    padding: 16px;
+}
+
+.trips-button button{
+    width: 200px;
+    height: 50px;
+    font-size: 25px;
+}
+
+.trips-locations{
+    display: grid;
+    grid-template-columns: 2fr .5fr;
+}
+
+.trips-locations h3{
+    grid-column: span 2;
+    text-align: center;
+    padding: 16px;
+}
+
+.trip-info{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    place-items: center;
+    border: 1px solid black;
 }
